@@ -2,9 +2,198 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
     <title>Portfolio Michal Herman</title>
   </head>
   <body>
-    <h1>Hello WORLD! This is the start of my Web</h1>
+    <header id="home">
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#tools">Tools</a>
+          <a href="#education">Education</a>
+          <a href="#graphics">Graphics</a>
+          <a href="#contact">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </nav>
+      <div class="about-me">
+        <div class="center">
+          <div class="img">
+            <img id="profile-img" src="images/imgFoto.png" alt="Michal">
+          </div>
+            <div class="my-paragraph">
+              <h1>Michal Heřman</h1>
+              <h2>Front-end developer</h2>
+              <p id="aboutMe">My name is Michal. I graduated from Masaryk University with the field of Combined art studies.
+                And when it was over I sadly realized that I am far from my childhood dream.
+                 The dream was to do something creative and everything I learned so far was theoretical.
+                  I wasn’t giving up though and soon i found myself passionate about digital arts nad coding.
+                  So I began to search my way into the world of code, pixels and vectors.</p>
+            </div>
+          </div>
+      </div>
+    </header>
+
+    <main>
+    <!-- //Tools I use -->
+    <section id="tools" class="work">
+      <div class="content-wrap">
+        <h2>Tools I Use</h2>
+
+        <!-- // Front end: -->
+        <div class="col-narrow">
+          <h3>Front-end</h3>
+          <ul class="tools-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="col-wide">
+          <h3>Graphics</h3>
+          <ul class="tools-list">
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Indesign</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+      <div class="content-wrap">
+        <h2>Education</h2>
+      <div class="col-narrow">
+        <h3>Past</h3>
+        <h4>Masaryk University - Faculty of Arts</h4>
+        <p>field of study: Combined Art Studies</p>
+        <h4>Training center NICOM a.s.</h4>
+        <p>retraining course - Graphic designer <br>(Adobe products- Illustrator, Photoshop, Indesign)</p>
+        <h4>Language school Elvis</h4>
+        <p>field of study: English</p>
+      </div>
+      <div class="col-wide">
+        <h3>Present &amp; Future </h3>
+        <a href="https://www.pluralsight.com/" target="_blank"<h4>Pluralsight.com</h4></a><br>
+        <a href="https://www.lynda.com/" target="_blank"<h4>Lynda.com</h4></a><br>
+        <a href="https://getmimo.com/" target="_blank"<h4>MIMO</h4></a><br>
+        <a href="https://www.sololearn.com/" target="_blank"<h4>SoloLearn</h4></a>
+        <h4>other webs and blogs....</h4>
+      </div>
+
+      </div>
+    </section>
+
+
+    <!--GRAPHICS-->
+    <section id="graphics">
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="images/img.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/img2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/img3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/img4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="images/img5.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides2">
+          <img src="images/img6.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="images/img7.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="images/img8.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="images/img9.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="images/img10.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="images/img11.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+    </section>
+
+    <!-- Quotes -->
+    <section>
+      <div class="quotes">
+        <h2>My favourite quotes</h2>
+        <ul class="quotes-list">
+          <li>
+            <blockquote id="Albert">
+              &ldquo;Imagination is everything. It is the preview of life's coming attractions.&rdquo;
+              <p>Albert Einstein</p>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote id="Cameron">
+              &ldquo;People call me a perfectionist, but I'm not. I'm a rightist. I do something until it's right, and then I move on to the next thing.&rdquo;
+              <p>James Cameron</p>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote id="Albert2">
+              &ldquo;Once you stop learning, you start dying.&rdquo;
+              <p>Albert Einstein</p>
+            </blockquote>
+        </li>
+      </ul>
+     </div>
+    </section>
+  </main>
+
+
+  <!-- -->
+  <footer id="contact">
+    <div class="content-wrap">
+      <h2>Contact</h2>
+
+      <!-- Footer & Contact info -->
+      <div class="contact-info">
+        <a href="mailto:herman.mvision@gmail.com"><img src="images/env.png"></a>
+        <a href="https://www.linkedin.com/in/michal-he%C5%99man-112127134/" target="_blank"><img src="images/in.png"></a>
+        <a href="https://www.facebook.com/michal.herman12" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+      </div>
+
+      <p>Copyright 2018 by Michal Heřman</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
   </body>
 </html>
