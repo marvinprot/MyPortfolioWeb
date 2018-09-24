@@ -1,6 +1,6 @@
 /* COLORS: #080705 #246A73 #97DFFC #095256 #F0A202  */
 /* Global Styles */
-/* apply a natural box layout model to all elements, but allowing components to change */
+
 html {
   box-sizing: border-box;
 }
@@ -54,14 +54,14 @@ a:hover {
   padding: 50px;
   overflow: auto;
 }
-.col-narrow {
+.col1 {
   width: 50%;
   float: left;
   min-height: 175px;
   text-align: center;
   padding: 0;
 }
-.col-wide {
+.col2 {
   width: 50%;
   float: left;
   /* padding-left: 20px; */
@@ -81,6 +81,7 @@ a:hover {
   width: 75%;
   margin: 0 auto;
 }
+
 .img {
   width: 35%;
 }
@@ -110,9 +111,23 @@ header h1, header h2 {
   margin: 0;
   text-align: right;
 }
-
+@media screen and (max-width: 800px) {
+    .col1 {
+    width: 100%;
+    }
+    .col2 {
+    width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .center {
+    width: 100%;
+    }
+    .my-paragraph {
+    text-align: left;
+    }
+}
 /* TOP-NAV */
-/* Add a black background color to the top navigation */
 .topnav {
     background-color: #080705;
     overflow: hidden;
@@ -121,7 +136,6 @@ header h1, header h2 {
     z-index: 99999;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
@@ -132,25 +146,20 @@ header h1, header h2 {
     font-size: 17px;
 }
 
-/* Add an active class to highlight the current page */
 .active {
     background-color: #095256;
     color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
 }
 
-
-/* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover {
     background-color: #F0A202;
     color: white;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -161,7 +170,6 @@ header h1, header h2 {
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -208,7 +216,11 @@ img {vertical-align: middle;}
   margin: auto;
   float: left;
 }
-
+@media screen and (max-width: 800px) {
+    .slideshow-container {
+    max-width: 100%;
+    }
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -231,7 +243,6 @@ img {vertical-align: middle;}
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a grey background color */
 .prev:hover, .next:hover {
   background-color: #F0A202;
   color: black;
@@ -240,8 +251,8 @@ img {vertical-align: middle;}
 
 /* Quotes */
 .quotes {
-  margin: 0 50px;
-  padding: 50px;
+  margin: 0 auto;
+  padding: 0.5em;
   overflow: auto;
 }
 .quotes-list {
